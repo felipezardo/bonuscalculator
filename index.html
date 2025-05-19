@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Bônus de Seguro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Calculadora de Bônus de Seguro</h2>
+
+    <label for="vencimento">Data de vencimento da apólice:</label>
+    <input type="date" id="vencimento" />
+
+    <label for="bonusAnterior">Classe de bônus anterior:</label>
+    <input type="number" id="bonusAnterior" min="0" max="10" value="4" />
+
+    <label for="dataAtual">Data de hoje (ou cálculo):</label>
+    <input type="date" id="dataAtual" />
+
+    <button onclick="calcularBonus()">Calcular</button>
+
+    <div class="result" id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
